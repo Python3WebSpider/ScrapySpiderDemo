@@ -5,7 +5,7 @@ from scrapy.http import JsonRequest, FormRequest
 class HttpbinSpider(scrapy.Spider):
     name = 'httpbin'
     allowed_domains = ['httpbin.org']
-    start_url = 'http://httpbin.org/post'
+    start_url = 'https://httpbin.org/post'
     data = {'name': 'germey', 'age': '26'}
     
     def start_requests(self):
